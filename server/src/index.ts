@@ -95,7 +95,7 @@ app.listen(port, async () => {
     console.log("NGROK URL:", ngrokUrl);
 
     const twitterInstance = TwitterService.getInstance();
-    await twitterInstance.start();
+    // await twitterInstance.start();
     const me = await twitterInstance.me;
     services.push(twitterInstance);
     if (!me) {
